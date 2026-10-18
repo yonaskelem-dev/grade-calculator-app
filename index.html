@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Calculator App</h1>
+      <p>Interactive demonstration of the finished project</p>
+      <div>
+        <label class="label">Mathematics (0-100)</label>
+        <input
+          class="score-input" id="math"
+          type="number" min="0" max="100"
+          placeholder="Please enter maths score"
+        />
+      </div>
+      <div>
+        <label class="label">English (0-100)</label>
+        <input
+          class="score-input" id="english"
+          type="number" min="0" max="100"
+          placeholder="Please enter English score"
+        />
+      </div>
+      <div>
+        <label class="label">Science (0-100)</label>
+        <input
+          class="score-input" id="science"
+          type="number" min="0" max="100"
+          placeholder="Please enter Science score"
+        />
+      </div>
+      <button class="button" onclick="calculateGrade()">Calculate Grade</button>
+
+      <div class="result">
+        <p>Average score <strong id="average">0%</strong></p>
+        <p>Grade <strong id="grade">-</strong></p>
+        <p id="status"></p>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
