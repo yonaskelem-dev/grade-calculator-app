@@ -16,13 +16,14 @@ body{
     border-radius: 40px;
     font-size: 15px;
 }
-.container{
-    width: 450px;
+.container {
+    width: 100%;
+    max-width: 450px;
     box-sizing: border-box;
     min-height: 500px;
     border: 1px solid #333;
     border-radius: 30px;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 20px;
 }
 .button{
@@ -58,4 +59,39 @@ body{
 
 #status {
     color: #00c878;
+}
+
+/* Tablets and smaller screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 450px;
+        padding: 18px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+        border-radius: 20px;
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .score-input,
+    .button {
+        font-size: 14px;
+    }
+
+    .result {
+        padding: 15px;
+    }
+
+    .result strong {
+        font-size: 18px;
+    }
 }
